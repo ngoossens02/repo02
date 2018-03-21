@@ -27,7 +27,7 @@
             "value": "Ubuntu01-nsg"
         },
         "adminPassword": {
-            "value": null
+            "value": "P@ssw0rd"
         },
         "diagnosticsStorageAccountName": {
             "value": "autodeploydiag385"
