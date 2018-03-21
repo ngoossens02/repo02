@@ -55,6 +55,9 @@
         },
         "publicIpAddressSku": {
             "value": "Basic"
+        },
+        "mySqlPassword": {
+            "value": "AzureDb2018"
         }
     }
 }
