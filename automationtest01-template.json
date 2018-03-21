@@ -211,7 +211,7 @@
         },
         {
             "type": "Microsoft.Compute/virtualMachines/extensions",
-            "name": "[parameters('virtualMachineName'),'/newuserscript')]",
+            "name": "[concat(parameters('virtualMachineName'),'/newuserscript')]",
             "apiVersion": "2015-06-15",
             "location": "[resourceGroup().location]",
             "dependsOn": [
