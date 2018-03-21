@@ -20,6 +20,7 @@ bash /usr/share/doc/wordpress/examples/setup-mysql -n wordpress localhost
 
 ln -s /usr/share/wordpress /var/www/html/wordpress
 mv /etc/wordpress/config-localhost.php /etc/wordpress/config-default.php
+sed -i '5s/.*/define("'"DB_PASSWORD"'", "'"AyzT7MUp"'");/' /etc/wordpress/config-default.php
 
 echo "ALTER USER 'wordpress'@'localhost' IDENTIFIED BY 'AyzT7MUp';" > change_password.sql
 mysql -h localhost -u root --password="$dbpass" < change_password.sql
