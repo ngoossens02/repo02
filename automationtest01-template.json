@@ -55,6 +55,9 @@
         },
         "publicIpAddressSku": {
             "type": "string"
+        },
+        "mySqlPassword": {
+            "type": "string"
         }
     },
     "variables": {
