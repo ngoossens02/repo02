@@ -1,20 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Marketplace
-Explore
- @ngoossens02
-Sign out
-0
-0 0 ngoossens02/repo02
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
-repo02/automationtest01-template.json
-700eeb0  7 minutes ago
-@ngoossens02 ngoossens02 Update automationtest01-template.json
-     
-255 lines (254 sloc)  9.29 KB
 {
     "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
