@@ -27,7 +27,7 @@
             "value": "Ubuntu01-nsg"
         },
         "adminPassword": {
-            "value": "P@ssw0rd"
+            "value": "AzureAutomation2018"
         },
         "diagnosticsStorageAccountName": {
             "value": "autodeploydiag385"
