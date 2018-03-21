@@ -133,7 +133,7 @@
           "commandToExecute": "[concat('sh install_wordpress.sh ', parameters('mySqlPassword'))]"
         }
       }
-    }
+    },
         {
             "name": "[parameters('diagnosticsStorageAccountName')]",
             "type": "Microsoft.Storage/storageAccounts",
