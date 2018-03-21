@@ -205,6 +205,18 @@
                             "destinationAddressPrefix": "*",
                             "destinationPortRange": "22"
                         }
+                    },
+                    {
+                        "name": "default-allow-http",
+                        "properties": {
+                            "priority": 1000,
+                            "protocol": "TCP",
+                            "access": "Allow",
+                            "direction": "Inbound",
+                            "sourceAddressPrefix": "*",
+                            "sourcePortRange": "*",
+                            "destinationAddressPrefix": "*",
+                            "destinationPortRange": "80"
                     }
                 ]
             }
