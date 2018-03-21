@@ -112,6 +112,29 @@
             }
         },
         {
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "name": "[concat(variables('vmName'),'/newuserscript')]",
+            "apiVersion": "2015-06-15",
+            "location": "[resourceGroup().location]",
+            "dependsOn": [
+                "[concat('Microsoft.Compute/virtualMachines/', variables('vmName'))]"
+             ],
+            "properties": {
+            "publisher": "Microsoft.Azure.Extensions",
+            "type": "CustomScript",
+            "typeHandlerVersion": "2.0",
+            "autoUpgradeMinorVersion": true,
+            "settings": {
+            "fileUris": [
+                "https://raw.githubusercontent.com/ngoossens02/repo02/master/install_wordpress.sh"
+            ]
+       },
+        "protectedSettings": {
+          "commandToExecute": "[concat('sh install_wordpress.sh ', parameters('mySqlPassword'))]"
+        }
+      }
+    }
+        {
             "name": "[parameters('diagnosticsStorageAccountName')]",
             "type": "Microsoft.Storage/storageAccounts",
             "apiVersion": "2015-06-15",
