@@ -27,7 +27,7 @@
             "type": "string"
         },
         "adminPassword": {
-            "type": "securestring"
+            "type": "string"
         },
         "diagnosticsStorageAccountName": {
             "type": "string"
