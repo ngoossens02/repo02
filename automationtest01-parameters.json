@@ -29,7 +29,7 @@
         "adminPassword": {
             "reference": {
               "keyVault": {
-                "id": "/subscriptions/fc1c5186-c2c6-4f86-ab8d-988505a97094/resourceGroups/SecureVault/providers/Microsoft.KeyVault/vaults/AutoKeyVault2018"
+                "id": "/subscriptions/fc1c5186-c2c6-4f86-ab8d-988505a97094/resourceGroups/SecureVault/providers/Microsoft.KeyVault/vaults/autokeyvault2018"
               },
               "secretName": "vm-adminpassword"
             }
@@ -64,7 +64,7 @@
         "mySqlPassword": {
             "reference": {
               "keyVault": {
-                "id": "/subscriptions/fc1c5186-c2c6-4f86-ab8d-988505a97094/resourceGroups/SecureVault/providers/Microsoft.KeyVault/vaults/AutoKeyVault2018"
+                "id": "/subscriptions/fc1c5186-c2c6-4f86-ab8d-988505a97094/resourceGroups/SecureVault/providers/Microsoft.KeyVault/vaults/autokeyvault2018"
               },
               "secretName": "wordpress-dbpassword"
             }
