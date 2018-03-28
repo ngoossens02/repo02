@@ -27,7 +27,12 @@
             "value": "Ubuntu01-nsg"
         },
         "adminPassword": {
-            "value": "AzureAutomation2018"
+            "reference": {
+              "keyVault": {
+                "id": "/subscriptions/fc1c5186-c2c6-4f86-ab8d-988505a97094/resourceGroups/SecureVault/providers/Microsoft.KeyVault/vaults/AutoKeyVault2018"
+              },
+              "secretName": "vm-adminpassword"
+            }
         },
         "diagnosticsStorageAccountName": {
             "value": "autodeploydiag385"
@@ -57,7 +62,12 @@
             "value": "Basic"
         },
         "mySqlPassword": {
-            "value": "AzureDb2018"
+            "reference": {
+              "keyVault": {
+                "id": "/subscriptions/fc1c5186-c2c6-4f86-ab8d-988505a97094/resourceGroups/SecureVault/providers/Microsoft.KeyVault/vaults/AutoKeyVault2018"
+              },
+              "secretName": "wordpress-dbpassword"
+            }
         }
     }
 }
