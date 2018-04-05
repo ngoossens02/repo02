@@ -250,7 +250,7 @@
         "type": "Microsoft.Resources/deployments",
         "name": "updateVMSize",
         "dependsOn": [
-            "nic1"
+            "[parameters('virtualMachineName')]"
         ],
         "properties": {
           "mode": "Incremental",
