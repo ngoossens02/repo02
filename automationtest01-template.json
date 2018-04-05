@@ -250,7 +250,7 @@
         "type": "Microsoft.Resources/deployments",
         "name": "updateVMSize",
         "dependsOn": [
-            "[parameters('virtualMachineName')]"
+            "[concat(parameters('virtualMachineName'),'/newuserscript')]"
         ],
         "properties": {
           "mode": "Incremental",
