@@ -244,39 +244,7 @@
           "commandToExecute": "[concat('sh install_wordpress.sh ', parameters('mySqlPassword'))]"
         }
       }
-    },
-    {
-        "apiVersion": "2015-01-01",
-        "type": "Microsoft.Resources/deployments",
-        "name": "updateVMSize",
-        "dependsOn": [
-            "[concat(parameters('virtualMachineName'),'/newuserscript')]"
-        ],
-        "properties": {
-          "mode": "Incremental",
-          "parameters": {},
-          "template": {
-            "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
-            "contentVersion": "1.0.0.0",
-            "parameters": {},
-            "variables": {},
-            "resources": [
-                {
-                    "apiVersion": "2016-04-30-preview",
-                    "name": "[parameters('virtualMachineName')]",
-                    "location": "[parameters('location')]",
-                    "type": "Microsoft.Compute/virtualMachines",
-                    "properties": {
-                        "hardwareProfile": {
-                          "vmSize": "Standard_F2s"
-                        }
-                    }
-                }
-            ],
-            "outputs": {}
-            }
-          }
-      }
+    }
     ],
     "outputs": {
         "adminUsername": {
