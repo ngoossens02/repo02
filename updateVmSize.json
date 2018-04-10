@@ -5,7 +5,7 @@
         {
             "apiVersion": "2015-01-01",
             "type": "Microsoft.Resources/deployments",
-            "name": "updateVMSize",
+            "name": "updateWordPressVMSize",
             "properties": {
                 "mode": "Incremental",
                 "parameters": {},
